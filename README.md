@@ -25,7 +25,7 @@ jobs:
       - run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-      - uses: Stefansm/nbgv.sh-action@test
+      - uses: Stefansm/nbgv.sh-action@main
         id: version
       - run: |
           git tag v${{ steps.version.outputs.version }}
